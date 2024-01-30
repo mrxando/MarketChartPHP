@@ -1,5 +1,5 @@
 <?php
-$itemname = $_POST['item_name'] ?? '';
+$itemname = htmlspecialchars($_POST['item_name']) ?? '';
 $itemname = trim($itemname);
 
 if($itemname){
